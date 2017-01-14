@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33B31FEEFEAB6B83A58B7EAD /* Pods_TumblrFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15CCACB569878782C8A3F00 /* Pods_TumblrFeed.framework */; };
 		4B093FED1E2A9F6700625F97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B093FEC1E2A9F6700625F97 /* AppDelegate.swift */; };
-		4B093FEF1E2A9F6700625F97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B093FEE1E2A9F6700625F97 /* ViewController.swift */; };
 		4B093FF21E2A9F6700625F97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B093FF01E2A9F6700625F97 /* Main.storyboard */; };
 		4B093FF41E2A9F6700625F97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B093FF31E2A9F6700625F97 /* Assets.xcassets */; };
 		4B093FF71E2A9F6700625F97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B093FF51E2A9F6700625F97 /* LaunchScreen.storyboard */; };
+		4B093FFF1E2A9FB900625F97 /* MovieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B093FFE1E2A9FB900625F97 /* MovieController.swift */; };
+		4B0940091E2AB77700625F97 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0940081E2AB77700625F97 /* MovieCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4B093FE91E2A9F6700625F97 /* TumblrFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TumblrFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B093FEC1E2A9F6700625F97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4B093FEE1E2A9F6700625F97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4B093FF11E2A9F6700625F97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B093FF31E2A9F6700625F97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B093FF61E2A9F6700625F97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B093FF81E2A9F6700625F97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B093FFE1E2A9FB900625F97 /* MovieController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieController.swift; sourceTree = "<group>"; };
+		4B0940081E2AB77700625F97 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		5B97809CF581C2E975685AC2 /* Pods-TumblrFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TumblrFeed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TumblrFeed/Pods-TumblrFeed.debug.xcconfig"; sourceTree = "<group>"; };
+		A7F7FD3094E1156A0B427B74 /* Pods-TumblrFeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TumblrFeed.release.xcconfig"; path = "Pods/Target Support Files/Pods-TumblrFeed/Pods-TumblrFeed.release.xcconfig"; sourceTree = "<group>"; };
+		B15CCACB569878782C8A3F00 /* Pods_TumblrFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TumblrFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33B31FEEFEAB6B83A58B7EAD /* Pods_TumblrFeed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4AA526F47857C796F415E055 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B97809CF581C2E975685AC2 /* Pods-TumblrFeed.debug.xcconfig */,
+				A7F7FD3094E1156A0B427B74 /* Pods-TumblrFeed.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4B093FE01E2A9F6700625F97 = {
 			isa = PBXGroup;
 			children = (
 				4B093FEB1E2A9F6700625F97 /* TumblrFeed */,
 				4B093FEA1E2A9F6700625F97 /* Products */,
+				4AA526F47857C796F415E055 /* Pods */,
+				C79BC9646954E5162507D26F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +72,39 @@
 		4B093FEB1E2A9F6700625F97 /* TumblrFeed */ = {
 			isa = PBXGroup;
 			children = (
+				4B0940031E2AB32500625F97 /* view controllers */,
+				4B0940001E2AB2D700625F97 /* Views */,
 				4B093FEC1E2A9F6700625F97 /* AppDelegate.swift */,
-				4B093FEE1E2A9F6700625F97 /* ViewController.swift */,
 				4B093FF01E2A9F6700625F97 /* Main.storyboard */,
 				4B093FF31E2A9F6700625F97 /* Assets.xcassets */,
 				4B093FF51E2A9F6700625F97 /* LaunchScreen.storyboard */,
 				4B093FF81E2A9F6700625F97 /* Info.plist */,
 			);
 			path = TumblrFeed;
+			sourceTree = "<group>";
+		};
+		4B0940001E2AB2D700625F97 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4B0940081E2AB77700625F97 /* MovieCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		4B0940031E2AB32500625F97 /* view controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4B093FFE1E2A9FB900625F97 /* MovieController.swift */,
+			);
+			name = "view controllers";
+			sourceTree = "<group>";
+		};
+		C79BC9646954E5162507D26F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B15CCACB569878782C8A3F00 /* Pods_TumblrFeed.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +114,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B093FFB1E2A9F6700625F97 /* Build configuration list for PBXNativeTarget "TumblrFeed" */;
 			buildPhases = (
+				38BD69D2CC37367BB1E61C1E /* [CP] Check Pods Manifest.lock */,
 				4B093FE51E2A9F6700625F97 /* Sources */,
 				4B093FE61E2A9F6700625F97 /* Frameworks */,
 				4B093FE71E2A9F6700625F97 /* Resources */,
+				0CB3D89D72426243434E3CAB /* [CP] Embed Pods Frameworks */,
+				DF5E698D4740F00DD91D8F96 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +177,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0CB3D89D72426243434E3CAB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TumblrFeed/Pods-TumblrFeed-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38BD69D2CC37367BB1E61C1E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DF5E698D4740F00DD91D8F96 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TumblrFeed/Pods-TumblrFeed-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4B093FE51E2A9F6700625F97 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B093FEF1E2A9F6700625F97 /* ViewController.swift in Sources */,
+				4B093FFF1E2A9FB900625F97 /* MovieController.swift in Sources */,
 				4B093FED1E2A9F6700625F97 /* AppDelegate.swift in Sources */,
+				4B0940091E2AB77700625F97 /* MovieCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +351,7 @@
 		};
 		4B093FFC1E2A9F6700625F97 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B97809CF581C2E975685AC2 /* Pods-TumblrFeed.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TumblrFeed/Info.plist;
@@ -268,6 +364,7 @@
 		};
 		4B093FFD1E2A9F6700625F97 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7F7FD3094E1156A0B427B74 /* Pods-TumblrFeed.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TumblrFeed/Info.plist;
