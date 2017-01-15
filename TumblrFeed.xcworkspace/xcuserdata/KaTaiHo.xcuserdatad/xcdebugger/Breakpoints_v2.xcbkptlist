@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
-   type = "1"
+   type = "0"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TumblrFeed/MovieController.swift"
-            timestampString = "506132861.03272"
+            timestampString = "506146490.59808"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -29,9 +29,9 @@
             timestampString = "506146490.59808"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
-            landmarkName = "tableView(_:cellForRowAt:)"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
