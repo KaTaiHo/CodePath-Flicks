@@ -26,7 +26,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="93"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="MovieCell" tableViewCell="umW-D9-drC" id="173-wR-Lxe">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="92"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="93"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hx7-MQ-Wem">

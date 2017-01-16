@@ -18,14 +18,16 @@ class MovieController: UIViewController, UITableViewDataSource, UITableViewDeleg
     var movies: [NSDictionary]?
     var endpoint: String!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
-        
-        
-        tableView.dataSource = self
-        tableView.delegate = self
-        // Do any additional setup after loading the view.
+        if let path = tableView.indexPathForSelectedRow {
+            
+            tableView.deselectRow(at: path, animated: true)
+        }
+    }
+    
+    func updateView() {
         
         let apiKey = "3b2b3e9d13b154a1e46461bd246ff0d8"
         let urlString = "https://api.themoviedb.org/3/movie/\(endpoint!)?api_key=\(apiKey)"
@@ -47,6 +49,22 @@ class MovieController: UIViewController, UITableViewDataSource, UITableViewDeleg
     }
     
     
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        tableView.dataSource = self
+        tableView.delegate = self
+        
+        //updateView()
+        // Do any additional setup after loading the view.
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(self.updateView), for: UIControlEvents.valueChanged)
+        // add refresh control to table view
+        tableView.insertSubview(refreshControl, at: 0)
+
+        
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -69,6 +87,9 @@ class MovieController: UIViewController, UITableViewDataSource, UITableViewDeleg
         let overview = movie["overview"] as! String
         cell.titleLabel.text = title
         cell.overviewLabel.text = overview
+        let backgroundView = UIView()
+        backgroundView.backgroundColor = UIColor.yellow
+        cell.selectedBackgroundView = backgroundView
         
         let baseUrl = "https://image.tmdb.org/t/p/w500"
         
@@ -80,7 +101,7 @@ class MovieController: UIViewController, UITableViewDataSource, UITableViewDeleg
         return cell
     }
 
-    
+
 
     
     // MARK: - Navigation
